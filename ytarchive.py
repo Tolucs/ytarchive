@@ -1377,7 +1377,8 @@ def download_stream(data_type, dfile, progress_queue, info, frag_files):
 
                 if frag_files:
                     try:
-                        os.remove(d.fname)
+                        # os.remove(d.fname)
+			dontmindme=1
                     except Exception as err:
                         logwarn("{0}-download: Error deleting fragment {1}: {2}".format(data_type, d.seq, err))
                         logwarn("{0}-download: Will try again after the download has finished".format(data_type))
