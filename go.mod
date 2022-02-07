@@ -1,4 +1,4 @@
-module github.com/Kethsar/ytarchive
+module github.com/Tolucs/ytarchive
 
 go 1.16
 
